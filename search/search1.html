@@ -1,22 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        
         <title>Search</title>
         <h1>
             Welcome to easy search
         </h1>
     </head>
     <body>
+        <!-- My stylesheet -->
         <link rel="stylesheet" href="searchstyles.css">
-        <div class="toprighters">
-            <table>
-                <tr>
-                    <td><a href="search2.html">Google Image Search</a></td>
-                </tr>
-                <tr>
-                    <td><a href="search3.html">Google Advanced Search</a></td>
-                </tr>
-            </table>
-        </div>
+        
+        <!-- Links for image and advanced search -->
+        <table class="toprighters">
+            <tr>
+                <td><a href="search2.html">Google Image Search</a></td>
+            </tr>
+            <tr>
+                <td><a href="search3.html">Google Advanced Search</a></td>
+            </tr>
+        </table>
+
+        <!-- Google logo, searchbar and buttons for search and feeling lucky -->
+        <table class="center">
+            <tr>
+                <td><img src="Google.png" alt="Google"></td>
+            </tr>
+            <tr>
+                <td>
+                    <form action="https://google.com/search">
+                        <input type="text" name="q">
+                        <input type="submit" value="Google Search">
+                </td>
+            </tr>
+        </table>
+        
+        
+        
+        </form>
     </body>
 </html>
