@@ -2,15 +2,25 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <title>2</title>
-        <h1>
-            Welcome to image search
-        </h1>
+        <title>Image Search</title>
     </head>
     <body>
         <link rel="stylesheet" href="searchstyles.css">
         <div class="toprighters">
-            <a href="search1.html">Google Easy Search</a>
+            <a href="search1.html">Google Search</a>
+        </div>
+
+        <!-- Google logo, searchbar and buttons for search and feeling lucky -->
+        <div id="googDiv">
+            <img src="Google.png" alt="Google" id="butmod">
+            
+            <form action="http://www.google.com/search" name=f>
+                <br>
+                <input type ="hidden" name="tbm" value="isch">
+                <input class="input-bar" maxlength=2048 name=q size=55 title="Google Search">
+                <br><br>
+                <input name=btnG type=submit value="Image Search" class="btn btn-light" id="butmod2" style="color:#5f6368">
+            </form>
         </div>
     </body>
 </html>

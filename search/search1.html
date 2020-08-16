@@ -5,9 +5,6 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         
         <title>Search</title>
-        <h1>
-            Welcome to easy search
-        </h1>
     </head>
     <body>
         <!-- My stylesheet -->
@@ -24,21 +21,17 @@
         </table>
 
         <!-- Google logo, searchbar and buttons for search and feeling lucky -->
-        <table class="center">
-            <tr>
-                <td><img src="Google.png" alt="Google"></td>
-            </tr>
-            <tr>
-                <td>
-                    <form action="https://google.com/search">
-                        <input type="text" name="q">
-                        <input type="submit" value="Google Search">
-                </td>
-            </tr>
-        </table>
-        
-        
-        
-        </form>
+        <div id="googDiv">
+            <img src="Google.png" alt="Google" id="butmod">
+            <form action="http://www.google.com/search" name=f>
+                <br>
+                <input name=hl type=hidden value=en>
+                <input class="input-bar" maxlength=2048 name=q size=55 title="Google Search">
+                <!-- <img src="https://www.google.com/images/searchbox/desktop_searchbox_sprites302_hr.webp" alt="search-icon"> -->
+                <br><br>
+                <input name=btnG type=submit value="Google Search" class="btn btn-light" id="butmod" style="color:#5f6368">
+                <input name=btnI type=submit value="I'm Feeling Lucky" class="btn btn-light" id="butmod" style="color:#5f6368">
+            </form>
+        </div>
     </body>
 </html>

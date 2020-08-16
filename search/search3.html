@@ -2,15 +2,40 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <title>3</title>
-        <h1>
-            Welcome to advanced search
-        </h1>
+        <title>Advanced Search</title>
+        <img src="Google.png" alt="Google" style="max-width: 130px; max-height: 45px; margin-left: 2%; margin-top: 1%">
+        <br><br>
     </head>
     <body>
         <link rel="stylesheet" href="searchstyles.css">
         <div class="toprighters">
-            <a href="search1.html">Google Easy Search</a>
+            <a href="search1.html">Google Search</a>
+        </div>
+
+        <!-- Google logo, searchbar and buttons for search and feeling lucky -->
+        <div style="margin-left: 4%;">
+            <form action="http://www.google.com/search" name=f>
+                <table>
+                    <th><h4>Find pages with... </h4></th>
+                    <tr>
+                        <td><label>All these words</label></td>
+                        <td><input name=q title="All these words"></td>
+                    </tr>
+                    <tr>
+                        <td><label>This exact word or phrase</label></td>
+                        <td><input name=as_epq title="This exact word or phrase"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Any of these words</label></td>
+                        <td><input name=as_oq title="Any of these words"></td>
+                    </tr>
+                    <tr>
+                        <td><label>None of these words</label></td>
+                        <td><input name=as_eq title="None of these words"></td>
+                    </tr>
+                </table>
+                <input name=btnG type=submit value="Advanced Search" class="btn btn-primary">
+            </form>
         </div>
     </body>
 </html>
