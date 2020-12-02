@@ -1,0 +1,15 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Search Result
+{% endblock %}
+
+{% block body %}
+<h1>Search Results</h1>
+        <ul>
+            {% for count in result %}
+                <li><a href="{{count}}">{{count}}</a></li>
+            {% endfor %}
+        </ul>
+
+{% endblock %}
